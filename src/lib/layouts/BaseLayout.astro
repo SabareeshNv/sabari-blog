@@ -13,6 +13,7 @@ import "../../styles/tailwind.css";
 
 import Head from "../components/Head.astro";
 import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
 
 export interface Props {
   title: string;
@@ -31,5 +32,6 @@ const { title, description } = Astro.props;
   <body class="font-sans antialiased">
     <Navbar />
     <slot />
+    <Footer />
   </body>
 </html>

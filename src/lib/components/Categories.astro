@@ -1,0 +1,24 @@
+---
+import { getCollection } from "astro:content";
+import { filterPosts, slugify } from "../utils/helpers";
+
+const allPosts = await getCollection("posts");
+const filteredPosts = filterPosts(allPosts);
+
+const uniqueCategory = [
+  ...new Set(filteredPosts.map((post) => post.data.category).flat()),
+] as string[];
+---
+
+<section class="bg-amber-100 p-4 my-6 rounded-sm">
+  <h2 class="text-2xl font-semibold font-oswald mb-4">Categories</h2>
+  <ul class="list-disc list-inside">
+    {
+      uniqueCategory.map((category) => (
+        <li class="mb-2 font-medium">
+          <a href={`category/${slugify(category)}`}>{category}</a>
+        </li>
+      ))
+    }
+  </ul>
+</section>

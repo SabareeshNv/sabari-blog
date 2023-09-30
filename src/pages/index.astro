@@ -1,5 +1,7 @@
 ---
 import HeroImage from "../lib/components/HeroImage.astro";
+import LatestPostsSection from "../lib/components/LatestPostsSection.astro";
+import Categories from "../lib/components/Categories.astro";
 import LatestPosts from "../lib/components/LatestPosts.astro";
 import BaseLayout from "../lib/layouts/BaseLayout.astro";
 
@@ -10,10 +12,13 @@ const description = "Some description";
 
 <BaseLayout {title} {description}>
   <HeroImage />
-  <div class="wrapper grid lg:grid-cols-4 gap-4">
+  <div class="wrapper grid lg:grid-cols-4 gap-8">
     <main class="lg:col-span-3">
-      <LatestPosts />
+      <LatestPostsSection />
     </main>
-    <aside class="my-6 bg-zinc-300">sidebar area</aside>
+    <aside class="md:mt-8">
+      <Categories />
+      <LatestPosts />
+    </aside>
   </div>
 </BaseLayout>

@@ -4,15 +4,6 @@ import { Image } from "astro:assets";
 import BaseLayout from "./BaseLayout.astro";
 import Date from "../components/Date.astro";
 
-export interface props {
-  title: string;
-  description: string;
-  pubDate: string;
-  category: string;
-  coverImage: any;
-  coverAlt: any;
-}
-
 const { title, description, pubDate, category, coverImage, coverAlt } =
   Astro.props;
 ---
@@ -21,10 +12,10 @@ const { title, description, pubDate, category, coverImage, coverAlt } =
   <main class="wrapper my-6">
     <a
       href={`/category/${slugify(category)}`}
-      class="tracking-wide text-lg font-bold uppercase text-purple-900 hover:text-purple-950 block mb-4"
+      class="tracking-wide font-bold uppercase text-purple-900 hover:text-purple-950 block mb-4"
       >{category}
     </a>
-    <h1 class="font-semibold leading-tight text-4xl lg:text-5xl mb-6">
+    <h1 class="font-semibold leading-[1.1] text-4xl lg:text-5xl">
       {title}
     </h1>
 
