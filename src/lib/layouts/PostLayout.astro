@@ -3,6 +3,8 @@ import { slugify } from "../utils/helpers";
 import { Image } from "astro:assets";
 import BaseLayout from "./BaseLayout.astro";
 import Date from "../components/Date.astro";
+import Categories from "../components/Categories.astro";
+import LatestPosts from "../components/LatestPosts.astro";
 
 const { title, description, pubDate, category, coverImage, coverAlt } =
   Astro.props;
@@ -53,7 +55,10 @@ const { title, description, pubDate, category, coverImage, coverAlt } =
       <article class="lg:col-span-3 typography overflow-hidden">
         <slot />
       </article>
-      <aside class="bg-zinc-300">side area</aside>
+      <aside>
+        <Categories />
+        <LatestPosts />
+      </aside>
     </div>
   </main>
 </BaseLayout>
