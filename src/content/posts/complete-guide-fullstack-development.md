@@ -3,7 +3,7 @@ title: "The Complete Guide to Full Stack Web Development"
 summary: "Ornare cum cursus laoreet sagittis nunc fusce posuere per euismod dis vehicula a, semper fames lacus maecenas dictumst pulvinar neque enim non potenti. Torquent hac sociosqu eleifend potenti."
 description: "some description"
 pubDate: "2022-12-28"
-coverImage: "../../assets/images/mumbai.webp"
+coverImage: "../../assets/images/dev.jpg"
 coverAlt: "A picture of a coder"
 category: "Design"
 ---
