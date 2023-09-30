@@ -3,7 +3,7 @@ title: "How to become a Frontend Master"
 summary: "Ornare cum cursus laoreet sagittis nunc fusce posuere per euismod dis vehicula a, semper fames lacus maecenas dictumst pulvinar neque enim non potenti. Torquent hac sociosqu eleifend potenti."
 description: "some description"
 pubDate: "2022-11-07"
-coverImage: "../../assets/images/front-end-developer.jpg"
+coverImage: "../../assets/images/mumbai.webp"
 coverAlt: "A picture of a coder"
 category: "Travel"
 ---

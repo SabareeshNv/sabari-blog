@@ -4,7 +4,7 @@ summary: "Sint sit cillum pariatur eiusmod nulla pariatur ipsum. Sit laborum ani
 description: "some description"
 pubDate: "2023-02-01"
 category: "Typography"
-coverImage: "../../assets/images/typo.png"
+coverImage: "../../assets/images/mumbai.webp"
 coverAlt: "Typography"
 featured: true
 ---

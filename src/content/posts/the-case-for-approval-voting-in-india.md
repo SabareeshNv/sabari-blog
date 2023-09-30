@@ -3,7 +3,7 @@ title: "The case for Approval Voting in India"
 summary: "Approval voting is a voting system that allows voters to cast their vote for as many candidates as they approve of. We explore the potential benefits of approval voting in India's political landscape, by analyzing the outcome of recent Lok Sabha elections."
 description: "some description"
 pubDate: "2023-05-03"
-coverImage: "../../assets/images/india-election.jpg"
+coverImage: "../../assets/images/mumbai.webp"
 coverAlt: "A picture of indian flag with a hand"
 category: "Election"
 ---

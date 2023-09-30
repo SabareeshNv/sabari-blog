@@ -4,7 +4,7 @@ summary: "Lorem ipsum dolor sit amet"
 description: "some description"
 pubDate: "2023-01-22"
 coverImage: "../../assets/images/1.jpg"
-coverAlt: "A picture of a indian flag"
+coverAlt: "../../assets/images/mumbai.webp"
 category: "Festival"
 ---
 

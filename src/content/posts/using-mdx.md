@@ -4,7 +4,7 @@ summary: "Lorem ipsum dolor sit amet"
 description: "some description"
 pubDate: "2022-12-25"
 category: "Urban Planning"
-coverImage: "../../assets/images/traditional-kerala.png"
+coverImage: "../../assets/images/mumbai.webp"
 coverAlt: "A picture of a coder"
 ---
 

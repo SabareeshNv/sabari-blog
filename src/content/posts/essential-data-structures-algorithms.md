@@ -3,7 +3,7 @@ title: " Introduction to the Essential Data Structures & Algorithms"
 summary: "Ornare cum cursus laoreet sagittis nunc fusce posuere per euismod dis vehicula a, semper fames lacus maecenas dictumst pulvinar neque enim non potenti. Torquent hac sociosqu eleifend potenti."
 description: "some description"
 pubDate: "2022-11-09"
-coverImage: "../../assets/images/data-structure.png"
+coverImage: "../../assets/images/mumbai.webp"
 coverAlt: "A picture of a coder"
 category: "design"
 ---

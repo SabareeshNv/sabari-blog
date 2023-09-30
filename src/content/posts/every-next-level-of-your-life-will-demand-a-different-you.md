@@ -3,7 +3,7 @@ title: "Every Next Level of Your Life Will Demand a Different You"
 summary: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi sunt tenetur soluta repellendus eius itaque impedit ullam, laboriosam inventore, unde"
 description: "some description"
 pubDate: "2022-11-24"
-coverImage: "../../assets/images/sun.webp"
+coverImage: "../../assets/images/mumbai.webp"
 coverAlt: "A picture of a coder"
 category: "personal"
 ---
