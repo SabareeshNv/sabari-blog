@@ -3,7 +3,7 @@ title: "Diwali Celebration in India"
 summary: "Lorem ipsum dolor sit amet"
 description: "some description"
 pubDate: "2023-01-22"
-coverImage: "../../assets/images/1.jpg"
+coverImage: "../../assets/images/mumbai.webp"
 coverAlt: "../../assets/images/mumbai.webp"
 category: "Festival"
 ---
