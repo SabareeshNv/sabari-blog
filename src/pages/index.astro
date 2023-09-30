@@ -1,0 +1,19 @@
+---
+import HeroImage from "../lib/components/HeroImage.astro";
+import LatestPosts from "../lib/components/LatestPosts.astro";
+import BaseLayout from "../lib/layouts/BaseLayout.astro";
+
+const title = "Some Title";
+
+const description = "Some description";
+---
+
+<BaseLayout {title} {description}>
+  <HeroImage />
+  <div class="wrapper grid lg:grid-cols-4 gap-4">
+    <main class="lg:col-span-3">
+      <LatestPosts />
+    </main>
+    <aside class="my-6 bg-zinc-300">sidebar area</aside>
+  </div>
+</BaseLayout>

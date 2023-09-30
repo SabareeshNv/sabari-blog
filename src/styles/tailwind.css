@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .wrapper {
+    @apply max-w-[1500px] w-[90%] mx-auto;
+  }
+
+  .card-container {
+    display: grid;
+    grid-column-gap: 2em;
+    grid-row-gap: 4em;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  }
+
+  .typography {
+    @apply prose lg:prose-lg xl:prose-xl prose-stone prose-headings:leading-tight prose-headings:font-oswald prose-table:bg-gray-50 prose-table:shadow prose-table:rounded prose-th:bg-gray-800 prose-th:text-gray-100 prose-th:font-sans prose-th:p-4 prose-td:p-4 prose-blockquote:border-gray-100 prose-blockquote:bg-gray-100 prose-blockquote:px-10 prose-blockquote:py-2;
+  }
+
+  .heading::after {
+    content: "";
+    display: block;
+    margin-top: 0.5em;
+    width: clamp(2em, 25%, 3em);
+    height: 2px;
+    background-color: #212121;
+  }
+}

@@ -1,0 +1,18 @@
+---
+import { getImage } from "astro:assets";
+import myBackground from "../../assets/images/site-hero.png";
+const heroImage = await getImage({
+  src: myBackground,
+});
+---
+
+<section
+  class="min-h-[80vh] bg-cover bg-center bg-[#19413f]"
+  style={`background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),url(${heroImage.src});`}
+>
+  <div class="grid place-items-center">
+    <div class="text-5xl font-oswald text-gray-100">
+      Looking at the world with a critical perspective.
+    </div>
+  </div>
+</section>

@@ -1,0 +1,35 @@
+---
+import "@fontsource/oswald/400.css";
+import "@fontsource/oswald/600.css";
+import "@fontsource/alegreya-sans/300.css";
+import "@fontsource/alegreya-sans/400.css";
+import "@fontsource/alegreya-sans/400-italic.css";
+import "@fontsource/alegreya-sans/500.css";
+import "@fontsource/alegreya-sans/700.css";
+import "@fontsource/alegreya-sans/800.css";
+import "@fontsource/alegreya-sans/900.css";
+
+import "../../styles/tailwind.css";
+
+import Head from "../components/Head.astro";
+import Navbar from "../components/Navbar.astro";
+
+export interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <Head {title} {description} />
+  </head>
+
+  <body class="font-sans antialiased">
+    <Navbar />
+    <slot />
+  </body>
+</html>

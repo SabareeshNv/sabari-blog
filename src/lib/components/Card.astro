@@ -1,0 +1,31 @@
+---
+import { Image } from "astro:assets";
+import { slugify } from "../utils/helpers";
+
+const { post } = Astro.props;
+const { title, summary, category, coverImage, coverAlt } = post.data;
+---
+
+<article class="flex flex-col">
+  <a href={`/blog/${post.slug}/`} class="rounded">
+    <Image
+      src={coverImage}
+      alt={coverAlt}
+      width={768}
+      class="rounded shadow w-full h-72 object-cover bg-center"
+    />
+  </a>
+
+  <a
+    href={`/category/${slugify(category)}`}
+    class="text-sm tracking-wide font-bold text-purple-900 hover:text-purple-950 mt-4 mb-3 block"
+    >{category.toUpperCase()}</a
+  >
+
+  <h2 class="text-2xl lg:text-3xl leading-tight mb-4 font-semibold heading">
+    <a href={`/blog/${post.slug}/`}>{title}</a>
+  </h2>
+  <div class="font-light text-lg">
+    {summary}
+  </div>
+</article>
