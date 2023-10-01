@@ -9,9 +9,6 @@ module.exports = {
 				sans: ["Alegreya Sans", ...defaultTheme.fontFamily.sans],
 				oswald: ["Oswald", "sans-serif"],
 			},
-			colors: {
-				"bg-primary": "#F5F7F9"
-			},
 			typography: {
 				DEFAULT: {
 				  css: {

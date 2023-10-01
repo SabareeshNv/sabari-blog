@@ -10,12 +10,12 @@ const uniqueCategory = [
 ] as string[];
 ---
 
-<section class="my-4 p-4 border-s-2">
+<section class="mb-10">
   <h2 class="text-2xl font-semibold font-oswald mb-4">Categories</h2>
-  <ul class="list-disc list-inside">
+  <ul class="divide-y">
     {
       uniqueCategory.map((category) => (
-        <li class="mb-2 font-medium">
+        <li class="py-2 md:py-1 text-lg">
           <a href={`category/${slugify(category)}`}>{category}</a>
         </li>
       ))

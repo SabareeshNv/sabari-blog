@@ -26,6 +26,20 @@
     height: 2px;
     background-color: #212121;
   }
+
+  .full-line::after {
+    content: "";
+    display: block;
+    margin-top: 0.5em;
+    width: 100%;
+    height: 5px;
+    background-color: #4a6113;
+  }
+
+  .border-under {
+    padding-bottom: 0.2em;
+    border-bottom: 1px solid #a3a3a3;
+  }
 }
 
 html,

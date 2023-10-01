@@ -18,14 +18,14 @@ const { title, summary, category, coverImage, coverAlt } = post.data;
 
   <a
     href={`/category/${slugify(category)}`}
-    class="text-sm tracking-wide font-bold text-purple-900 hover:text-purple-950 mt-4 mb-3 block"
+    class="tracking-wide font-bold mt-4 mb-3 block text-purple-900 hover:text-purple-950"
     >{category.toUpperCase()}</a
   >
 
   <h2 class="text-2xl leading-tight mb-4 font-semibold heading">
     <a href={`/blog/${post.slug}/`}>{title}</a>
   </h2>
-  <div class="font-light">
+  <div>
     {summary}
   </div>
 </article>
