@@ -6,6 +6,7 @@ pubDate: "2023-02-01"
 category: "Typography"
 coverImage: "../../assets/images/typography.jpg"
 coverAlt: "Typography"
+tags: ["Typography", "Markdown"]
 featured: true
 ---
 

@@ -6,6 +6,7 @@ pubDate: "2023-06-12"
 coverImage: "../../assets/images/mumbai.webp"
 coverAlt: "A beautiful view of Mumbai City, India"
 category: "Urban Planning"
+tags: ["Planning", "Astro"]
 featured: true
 ---
 

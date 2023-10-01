@@ -6,6 +6,7 @@ pubDate: "2023-05-03"
 coverImage: "../../assets/images/sun.webp"
 coverAlt: "A picture of indian flag with a hand"
 category: "Election"
+tags: ["Voting Method", "Astro", "Election", "India"]
 ---
 
 Approval voting is a voting method in which voters are allowed to vote for as many candidates as they approve of. This method has been used in many multi-party democracies around the world, including India. The effectiveness of approval voting in such a complex and diverse political landscape can be evaluated by analyzing the outcome of recent elections in India.

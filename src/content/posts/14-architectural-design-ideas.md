@@ -4,6 +4,7 @@ summary: "Ornare cum cursus laoreet sagittis nunc fusce posuere per euismod dis 
 description: "some description"
 pubDate: "2023-02-15"
 category: "Architecture"
+tags: ["Architecture", "Astro"]
 coverImage: "../../assets/images/mumbai.webp"
 coverAlt: "A picture of a villa"
 ---

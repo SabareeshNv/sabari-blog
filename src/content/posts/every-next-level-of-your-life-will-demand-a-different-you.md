@@ -5,7 +5,8 @@ description: "some description"
 pubDate: "2022-11-24"
 coverImage: "../../assets/images/mumbai.webp"
 coverAlt: "A picture of a coder"
-category: "personal"
+category: "Prsonal"
+tags: ["Level Up", "Personal"]
 ---
 
 **Reinvention often comes in spurts, after a long period of silence. Just as modern architecture recently enjoyed a comeback, brand architecture, a field with well-established principles for decades, is back in the limelight.**

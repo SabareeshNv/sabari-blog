@@ -6,7 +6,7 @@ import Date from "../components/Date.astro";
 import Categories from "../components/Categories.astro";
 import LatestPosts from "../components/LatestPosts.astro";
 
-const { title, description, pubDate, category, coverImage, coverAlt } =
+const { title, description, pubDate, category, tags, coverImage, coverAlt } =
   Astro.props;
 ---
 
@@ -52,8 +52,21 @@ const { title, description, pubDate, category, coverImage, coverAlt } =
     />
 
     <div class="grid lg:grid-cols-4 gap-4 my-6">
-      <article class="lg:col-span-3 typography overflow-hidden">
-        <slot />
+      <article class="lg:col-span-3 overflow-hidden">
+        <div class="typography">
+          <slot />
+        </div>
+        <div class="flex flex-wrap gap-4 my-6">
+          {
+            tags.map((tag) => (
+              <a href={`/tags/${tag}`}>
+                <span class="bg-gray-300 hover:bg-gray-400 rounded-md font-medium p-2">
+                  {tag}
+                </span>
+              </a>
+            ))
+          }
+        </div>
       </article>
       <aside>
         <Categories />

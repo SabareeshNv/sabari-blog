@@ -6,6 +6,7 @@ pubDate: "2022-11-06"
 coverImage: "../../assets/images/mumbai.webp"
 coverAlt: "A picture of a coder"
 category: "Typography"
+tags: ["Typography", "Astro", "Markdown"]
 featured: true
 ---
 

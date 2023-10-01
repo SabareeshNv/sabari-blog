@@ -2,11 +2,10 @@
 import HeroImage from "../lib/components/HeroImage.astro";
 import LatestPostsSection from "../lib/components/LatestPostsSection.astro";
 import Categories from "../lib/components/Categories.astro";
-import LatestPosts from "../lib/components/LatestPosts.astro";
+import TagCloud from "../lib/components/TagCloud.astro";
 import BaseLayout from "../lib/layouts/BaseLayout.astro";
 
 const title = "Welcome to my Humble Blog";
-
 const description = "Some description";
 ---
 
@@ -18,7 +17,7 @@ const description = "Some description";
     </main>
     <aside class="md:mt-6">
       <Categories />
-      <LatestPosts />
+      <TagCloud />
     </aside>
   </div>
 </BaseLayout>

@@ -7,6 +7,7 @@ const posts = defineCollection({
         summary: z.string(),
         pubDate: z.string().transform((str) => new Date(str)),
         category: z.string(),
+        tags: z.array(z.string()),
         coverImage: image(),
         coverAlt: z.string().default("No Alt Specified"),
         draft: z.boolean().optional().default(false),
