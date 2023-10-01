@@ -9,6 +9,11 @@ export function slugify(text: string):string {
     .replace(/-+$/, "");
 }
 
+export const unslugify = (slug) => slug.replace(/\-/g, " ")
+  .replace(/\w\S*/g,
+  (text) => text.charAt(0).toUpperCase() + text.slice(1).toLowerCase()
+);
+
 export function formatDate(date: Date): string {
   const d = new Date(date);
   return d.toLocaleDateString("en-US", {

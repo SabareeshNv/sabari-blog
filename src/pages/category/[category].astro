@@ -3,7 +3,7 @@ import BaseLayout from "../../lib/layouts/BaseLayout.astro";
 import Card from "../../lib/components/Card.astro";
 
 import { getCollection } from "astro:content";
-import { slugify, filterPosts } from "../../lib/utils/helpers";
+import { slugify, unslugify, filterPosts } from "../../lib/utils/helpers";
 
 export async function getStaticPaths() {
   const allPosts = await getCollection("posts");
@@ -28,15 +28,15 @@ export async function getStaticPaths() {
 const { category } = Astro.params;
 const { posts } = Astro.props;
 
-const title = `All the Posts related to ${category}`;
-const description = `All the Posts related to ${category}`;
+const title = `All the Posts related to ${unslugify(category)}`;
+const description = `All the Posts related to ${unslugify(category)}`;
 ---
 
 <BaseLayout {title} {description}>
   <div class="wrapper my-6">
     <h1 class="text-3xl lg:text-4xl mb-8 lg:mb-10">
       View all the posts on the topic of &nbsp; ' <span class="text-purple-900"
-        >{category}</span
+        >{unslugify(category)}</span
       > '
     </h1>
 
