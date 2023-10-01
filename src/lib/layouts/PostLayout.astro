@@ -1,9 +1,10 @@
 ---
-import { slugify } from "../utils/helpers";
+import { slugify, unslugify } from "../utils/helpers";
 import { Image } from "astro:assets";
 import BaseLayout from "./BaseLayout.astro";
 import Date from "../components/Date.astro";
 import Categories from "../components/Categories.astro";
+import TagCloud from "../components/TagCloud.astro";
 import LatestPosts from "../components/LatestPosts.astro";
 
 const { title, description, pubDate, category, tags, coverImage, coverAlt } =
@@ -70,6 +71,7 @@ const { title, description, pubDate, category, tags, coverImage, coverAlt } =
       </article>
       <aside>
         <Categories />
+        <TagCloud />
         <LatestPosts />
       </aside>
     </div>

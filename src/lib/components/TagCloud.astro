@@ -1,6 +1,6 @@
 ---
 import { getCollection } from "astro:content";
-import { filterPosts, slugify } from "../utils/helpers";
+import { filterPosts, slugify, unslugify } from "../utils/helpers";
 
 const allPosts = await getCollection("posts");
 const filteredPosts = filterPosts(allPosts);
@@ -12,11 +12,11 @@ const uniqueTags = [
 
 <section class="my-6">
   <h2 class="text-2xl font-semibold font-oswald mb-4 heading">All Tags</h2>
-  <div class="flex flex-wrap gap-4 my-6">
+  <div class="flex flex-wrap gap-4">
     {
       uniqueTags.map((tag) => (
         <a href={`/tags/${tag}`}>
-          <span class="bg-gray-200 hover:bg-gray-400 rounded-md font-medium p-2">
+          <span class="bg-gray-200 hover:bg-gray-300 focus:bg-gray-300 rounded-md font-medium p-2">
             {tag}
           </span>
         </a>
