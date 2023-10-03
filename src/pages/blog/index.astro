@@ -1,6 +1,8 @@
 ---
 import BaseLayout from "../../lib/layouts/BaseLayout.astro";
 import Card from "../../lib/components/Card.astro";
+import Categories from "../../lib/components/Categories.astro";
+import TagCloud from "../../lib/components/TagCloud.astro";
 
 import { filterPosts } from "../../lib/utils/helpers";
 import { getCollection } from "astro:content";
@@ -13,17 +15,21 @@ const description = "Here are all our blog posts";
 ---
 
 <BaseLayout {title} {description}>
-  <main class="my-6">
-    <div class="wrapper">
+  <div class="wrapper grid lg:grid-cols-4 gap-4 lg:gap-8 my-6">
+    <main class="lg:col-span-3">
       <h2 class="font-oswald text-4xl font-semibold mb-2">
         All Posts. Stay Informed
       </h2>
       <p class="text-2xl block mb-10">
         Here is the list of all our posts. Enjoy!
       </p>
-      <div class="card-container">
+      <div class="grid md:grid-cols-2 gap-x-6 gap-y-10">
         {filteredPosts.map((post) => <Card {post} />)}
       </div>
-    </div>
-  </main>
+    </main>
+    <aside class="my-8 md:my-0">
+      <Categories />
+      <TagCloud />
+    </aside>
+  </div>
 </BaseLayout>

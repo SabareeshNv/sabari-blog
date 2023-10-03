@@ -9,10 +9,18 @@ module.exports = {
 				sans: ["Alegreya Sans", ...defaultTheme.fontFamily.sans],
 				oswald: ["Oswald", "sans-serif"],
 			},
+			colors: {
+				"brand-white": "#FEFDF9",
+				"sand": {
+					"light": "hsl(42, 35%, 90%)",
+					"medium": "hsl(42, 35%, 85%)",
+					"thick": "hsl(42, 35%, 40%)"
+				}
+			},
 			typography: {
 				DEFAULT: {
 				  css: {
-					maxWidth: '72ch', 
+					maxWidth: '75ch', 
 				  }
 				}
 			},

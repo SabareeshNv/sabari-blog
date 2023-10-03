@@ -5,20 +5,23 @@ import { filterPosts, slugify } from "../utils/helpers";
 const allPosts = await getCollection("posts");
 const filteredPosts = filterPosts(allPosts);
 
-const uniqueCategory = [
+const uniqueCategories = [
   ...new Set(filteredPosts.map((post) => post.data.category).flat()),
 ] as string[];
 ---
 
 <section class="mb-10">
   <h2 class="text-2xl font-semibold font-oswald mb-4 heading">Categories</h2>
-  <ul class="divide-y">
+  <div class="flex flex-wrap gap-2">
     {
-      uniqueCategory.map((category) => (
-        <li class="py-2 md:py-1 text-lg">
-          <a href={`category/${slugify(category)}`}>{category}</a>
-        </li>
+      uniqueCategories.map((category) => (
+        <a
+          href={`/category/${slugify(category)}`}
+          class="bg-sand-light hover:bg-sand-medium focus:bg-sand-medium rounded-lg p-2"
+        >
+          {category}
+        </a>
       ))
     }
-  </ul>
+  </div>
 </section>

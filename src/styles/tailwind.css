@@ -4,7 +4,7 @@
 
 @layer components {
   .wrapper {
-    @apply max-w-[1600px] w-[90%] mx-auto;
+    @apply max-w-[1400px] w-[90%] mx-auto;
   }
 
   .card-container {
@@ -15,7 +15,7 @@
   }
 
   .typography {
-    @apply prose prose-lg xl:prose-xl text-gray-800 prose-headings:leading-tight prose-headings:font-oswald prose-table:bg-gray-50 prose-table:shadow prose-table:rounded prose-th:bg-gray-800 prose-th:text-gray-100 prose-th:font-sans prose-th:p-4 prose-td:p-4 prose-blockquote:border-gray-100 prose-blockquote:bg-gray-100 prose-blockquote:px-10 prose-blockquote:py-2;
+    @apply prose prose-lg xl:prose-xl text-gray-800 prose-headings:leading-tight prose-headings:font-oswald prose-table:bg-sand-medium prose-table:shadow prose-table:rounded prose-th:bg-gray-800 prose-th:text-gray-100 prose-th:font-sans prose-th:p-4 prose-td:p-4 prose-blockquote:border-gray-100 prose-blockquote:bg-gray-100 prose-blockquote:px-10 prose-blockquote:py-2;
   }
 
   .heading::after {

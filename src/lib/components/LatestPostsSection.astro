@@ -10,7 +10,7 @@ const filteredPosts = filterPosts(allPosts, { limit: 6 });
 <section class="my-6">
   <h2 class="font-oswald text-4xl font-semibold mb-2">Latest Posts!</h2>
   <span class="text-2xl block mb-10">Get the latest updates...</span>
-  <div class="grid md:grid-cols-2 gap-8">
+  <div class="grid md:grid-cols-2 gap-x-6 gap-y-10">
     {filteredPosts.map((post) => <Card {post} />)}
   </div>
 </section>

@@ -7,9 +7,9 @@ const nav = [
 ];
 ---
 
-<header class="py-4 shadow">
+<header class="py-4 shadow-md">
   <div class="wrapper flex flex-wrap justify-between items-center">
-    <a href="/" class="text-xl md:text-3xl font-bold">My Blog</a>
+    <a href="/" class="text-xl md:text-3xl lg:text-4xl font-bold">My Blog</a>
 
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -20,7 +20,7 @@ const nav = [
       width="24"
       height="24"
       id="toggle"
-      class="w-6 h-6 md:hidden cursor-pointer"
+      class="w-6 h-6 md:hidden cursor-pointer hover:outline focus:outline"
     >
       <path
         stroke-linecap="round"
@@ -32,8 +32,8 @@ const nav = [
       <ul class="flex flex-col pt-4 md:pt-0 md:flex-row">
         {
           nav.map((item) => (
-            <li class="py-4 md:py-0 md:px-6">
-              <a href={item.link} class="block text-lg">
+            <li class="py-3 md:py-0 md:px-6">
+              <a href={item.link} class="block text-lg hover:text-sand-thick">
                 {item.text}
               </a>
             </li>
