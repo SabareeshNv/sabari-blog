@@ -14,6 +14,14 @@ export const unslugify = (slug) => slug.replace(/\-/g, " ")
   (text) => text.charAt(0).toUpperCase() + text.slice(1).toLowerCase()
 );
 
+
+// export function slugifyArray(filteredPosts) {
+//   const slugSet = new Set();
+//   filteredPosts.forEach((item)=> {
+//     item.data.tags
+//   })
+// }
+
 export function formatDate(date: Date): string {
   const d = new Date(date);
   return d.toLocaleDateString("en-US", {
@@ -70,13 +78,13 @@ export function getReadingTime(content) {
   return Math.ceil(numberOfWords / WORDS_PER_MINUTE);
 }
 
-export function generateCategoryData(categories) {
-  let categoryData = [];
-  categories.forEach((category) => {
-    categoryData.push({
-      name: category,
-      slug: `${slugify(category)}`,
+export function generateTagData(tags) {
+  let tagData = [];
+  tags.forEach((tag) => {
+    tagData.push({
+      name: tag,
+      slug: `${slugify(tag)}`,
     });
   });
-  return categoryData;
+  return tagData;
 }

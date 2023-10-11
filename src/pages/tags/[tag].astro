@@ -3,7 +3,11 @@ import BaseLayout from "../../lib/layouts/BaseLayout.astro";
 import Card from "../../lib/components/Card.astro";
 
 import { getCollection } from "astro:content";
-import { slugify, filterPosts } from "../../lib/utils/helpers";
+import {
+  filterPosts,
+  generateTagData,
+  unslugify,
+} from "../../lib/utils/helpers";
 
 export async function getStaticPaths() {
   const allPosts = await getCollection("posts");
@@ -13,13 +17,17 @@ export async function getStaticPaths() {
     ...new Set(filteredPosts.map((post) => post.data.tags).flat()),
   ] as string[];
 
-  return uniqueTags.map((tag) => {
+  const tagData = generateTagData(uniqueTags);
+
+  return tagData.map((tag) => {
     const taggedPosts = filteredPosts.filter((post) =>
-      post.data.tags.includes(tag)
+      post.data.tags.includes(tag.name)
     );
 
+    console.log(taggedPosts);
+
     return {
-      params: { tag },
+      params: { tag: tag.slug },
       props: { posts: taggedPosts },
     };
   });
@@ -28,7 +36,7 @@ export async function getStaticPaths() {
 const { tag } = Astro.params;
 const { posts } = Astro.props;
 
-const title = `All the Posts related to ${tag}`;
+const title = `All the Posts related to ${unslugify(tag)}`;
 const description = `All the Posts related to ${tag}`;
 ---
 
@@ -36,7 +44,7 @@ const description = `All the Posts related to ${tag}`;
   <div class="wrapper my-6">
     <h1 class="text-3xl lg:text-4xl mb-8 lg:mb-10">
       View all the posts on the topic of &nbsp; ' <span
-        class="text-purple-900 font-semibold">{tag}</span
+        class="text-purple-900 font-semibold">{unslugify(tag)}</span
       > '
     </h1>
 
