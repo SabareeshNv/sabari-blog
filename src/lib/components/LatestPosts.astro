@@ -12,7 +12,7 @@ const filteredPosts = filterPosts(allPosts, { limit: 6 });
     {
       filteredPosts.map((post) => (
         <li class="py-2 text-lg hover:underline underline-offset-2">
-          <a href={`blog/${post.slug}`}>{post.data.title}</a>
+          <a href={`/blog/${post.slug}`}>{post.data.title}</a>
         </li>
       ))
     }

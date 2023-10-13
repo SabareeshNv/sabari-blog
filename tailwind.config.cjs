@@ -7,20 +7,15 @@ module.exports = {
 		extend: {
 			fontFamily: {
 				sans: ["Alegreya Sans", ...defaultTheme.fontFamily.sans],
-				oswald: ["Oswald", "sans-serif"],
+				oswald: ["Oswald", ...defaultTheme.fontFamily.sans]
 			},
 			colors: {
 				"brand-white": "#FEFDF9",
-				"sand": {
-					"light": "hsl(42, 35%, 90%)",
-					"medium": "hsl(42, 35%, 85%)",
-					"thick": "hsl(42, 35%, 40%)"
-				}
 			},
 			typography: {
 				DEFAULT: {
 				  css: {
-					maxWidth: '75ch', 
+					maxWidth: '70ch', 
 				  }
 				}
 			},

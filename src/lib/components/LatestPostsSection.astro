@@ -10,7 +10,15 @@ const filteredPosts = filterPosts(allPosts, { limit: 6 });
 <section class="my-6">
   <h2 class="font-oswald text-4xl font-semibold mb-2">Latest Posts!</h2>
   <span class="text-2xl block mb-10">Get the latest updates...</span>
+
   <div class="grid md:grid-cols-2 gap-x-6 gap-y-10">
     {filteredPosts.map((post) => <Card {post} />)}
   </div>
+
+  <a
+    href="/blog"
+    style="border: 1px solid black; transition: all 0.25s;"
+    class="my-6 text-xl px-2 py-3 text-center font-semibold font-oswald block md:ml-auto md:mr-6 md:w-fit hover:bg-gray-900 hover:text-gray-100"
+    >View All Posts &rarr;
+  </a>
 </section>

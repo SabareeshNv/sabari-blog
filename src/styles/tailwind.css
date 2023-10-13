@@ -15,7 +15,7 @@
   }
 
   .typography {
-    @apply prose prose-lg xl:prose-xl text-gray-800 prose-headings:leading-tight prose-headings:font-oswald prose-table:bg-gray-100 prose-table:shadow prose-table:rounded prose-th:bg-gray-800 prose-th:text-gray-100 prose-th:font-sans prose-th:p-4 prose-td:p-4 prose-blockquote:border-gray-100 prose-blockquote:bg-gray-100 prose-blockquote:px-10 prose-blockquote:py-2;
+    @apply prose prose-lg lg:prose-xl xl:prose-2xl text-gray-800 prose-headings:leading-tight prose-headings:font-oswald prose-table:bg-gray-100 prose-table:shadow prose-table:rounded prose-th:bg-gray-800 prose-th:text-gray-100 prose-th:font-sans prose-th:p-4 prose-td:p-4 prose-blockquote:border-gray-100 prose-blockquote:bg-gray-100 prose-blockquote:px-10 prose-blockquote:py-2;
   }
 
   .heading::after {
