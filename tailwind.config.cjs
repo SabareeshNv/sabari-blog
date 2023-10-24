@@ -7,10 +7,13 @@ module.exports = {
 		extend: {
 			fontFamily: {
 				sans: ["Alegreya Sans", ...defaultTheme.fontFamily.sans],
+				serif: ["Alegreya", ...defaultTheme.fontFamily.serif],
 				oswald: ["Oswald", ...defaultTheme.fontFamily.sans]
 			},
 			colors: {
 				"brand-white": "#FEFDF9",
+				"brand-red": "#b70038",
+				"pastel": "#f4f6f8"
 			},
 			typography: {
 				DEFAULT: {
