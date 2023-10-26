@@ -12,13 +12,13 @@ const { title, summary, category, coverImage, coverAlt } = post.data;
       src={coverImage}
       alt={coverAlt}
       width={900}
-      class="rounded shadow w-full h-[300px] object-cover bg-center"
+      class="rounded shadow w-full h-[20rem] object-cover bg-center"
     />
   </a>
 
   <a
     href={`/category/${slugify(category)}`}
-    class="tracking-wide font-bold mt-4 mb-3 inline-block text-brand-red"
+    class="tracking-wide font-bold mt-4 mb-3 text-sm lg:text-base inline-block text-brand-red"
     >{category.toUpperCase()}</a
   >
 

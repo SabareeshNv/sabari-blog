@@ -8,7 +8,7 @@ const allPosts = await getCollection("posts");
 const filteredPosts = filterPosts(allPosts, { limit: 11 });
 ---
 
-<div class="md:col-span-2">
+<div class="md:col-span-2 mb-6">
   {filteredPosts.slice(0, 1).map((post) => <FeaturedCard {post} />)}
 </div>
 
